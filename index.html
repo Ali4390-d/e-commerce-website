@@ -1,0 +1,725 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali Raza Store - Premium Shopping in Pakistan</title>
+    <meta name="description" content="Ali Raza Store offers premium products across Pakistan with city-based pricing, easy payment options and fast delivery">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header__topbar">
+            <div class="container header__topbar-container">
+                <div class="header__topbar-left">
+                    <a href="tel:+923284034512" class="header__topbar-link">
+                        <i class="fas fa-phone-alt"></i>
+                        +92 328 4034512
+                    </a>
+                    <a href="mailto:info@alirazastore.com" class="header__topbar-link">
+                        <i class="fas fa-envelope"></i>
+                        info@alirazastore.com
+                    </a>
+                </div>
+                <div class="header__topbar-right">
+                    <div class="language-switcher" id="languageSwitcher">
+                        <button class="header__topbar-link language-switcher__btn">
+                            <i class="fas fa-language"></i>
+                            English
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="language-switcher__dropdown">
+                            <div class="language-switcher__item" data-lang="en">English</div>
+                            <div class="language-switcher__item" data-lang="ur">اردو</div>
+                        </div>
+                    </div>
+                    <a href="#track-order" class="header__topbar-link">
+                        <i class="fas fa-truck"></i>
+                        Track Order
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="header__main">
+            <div class="container header__main-container">
+                <button class="header__mobile-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <a href="#" class="header__logo">
+                    <i class="fas fa-store header__logo-icon"></i>
+                    Ali Raza Store
+                </a>
+                <div class="header__search">
+                    <input type="text" class="header__search-input" placeholder="Search for products...">
+                    <button class="header__search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div class="header__actions">
+                    <div class="header__action" id="accountBtn">
+                        <i class="fas fa-user header__action-icon"></i>
+                        <span>Account</span>
+                    </div>
+                    <div class="header__action" id="wishlistBtn">
+                        <i class="fas fa-heart header__action-icon"></i>
+                        <span>Wishlist</span>
+                        <span class="header__action-badge" id="wishlistCount">0</span>
+                    </div>
+                    <div class="header__action" id="cartBtn">
+                        <i class="fas fa-shopping-cart header__action-icon"></i>
+                        <span>Cart</span>
+                        <span class="header__action-badge" id="cartCount">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="header__nav">
+            <div class="container">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link active">Home</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#featured" class="header__nav-link">Featured</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#deals" class="header__nav-link">Deals</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#categories" class="header__nav-link">Categories</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#electronics" class="header__nav-link">Electronics</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#fashion" class="header__nav-link">Fashion</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#home" class="header__nav-link">Home & Living</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#beauty" class="header__nav-link">Beauty</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu__content">
+            <div class="mobile-menu__header">
+                <a href="#" class="header__logo">
+                    <i class="fas fa-store header__logo-icon"></i>
+                    Ali Raza Store
+                </a>
+                <button class="mobile-menu__close" id="mobileMenuClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <nav class="mobile-menu__nav">
+                <ul class="mobile-menu__nav-list">
+                    <li>
+                        <a href="#" class="mobile-menu__nav-link active">Home</a>
+                    </li>
+                    <li>
+                        <a href="#featured" class="mobile-menu__nav-link">Featured Products</a>
+                    </li>
+                    <li>
+                        <a href="#deals" class="mobile-menu__nav-link">Deals of the Day</a>
+                    </li>
+                    <li>
+                        <a href="#categories" class="mobile-menu__nav-link">Categories</a>
+                    </li>
+                    <li>
+                        <a href="#electronics" class="mobile-menu__nav-link">Electronics</a>
+                    </li>
+                    <li>
+                        <a href="#fashion" class="mobile-menu__nav-link">Fashion</a>
+                    </li>
+                    <li>
+                        <a href="#home" class="mobile-menu__nav-link">Home & Living</a>
+                    </li>
+                    <li>
+                        <a href="#beauty" class="mobile-menu__nav-link">Beauty</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mobile-menu__footer">
+                <div class="header__actions">
+                    <div class="header__action">
+                        <i class="fas fa-user header__action-icon"></i>
+                        <span>Account</span>
+                    </div>
+                    <div class="header__action">
+                        <i class="fas fa-heart header__action-icon"></i>
+                        <span>Wishlist</span>
+                        <span class="header__action-badge">0</span>
+                    </div>
+                    <div class="header__action">
+                        <i class="fas fa-shopping-cart header__action-icon"></i>
+                        <span>Cart</span>
+                        <span class="header__action-badge">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero__slider">
+                <div class="hero__slide" style="background-image: url('https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                    <div class="hero__content">
+                        <span class="hero__subtitle">Summer Collection</span>
+                        <h1 class="hero__title">Up to 50% Off on New Arrivals</h1>
+                        <p class="hero__text">Discover the latest trends in fashion and electronics with exclusive discounts</p>
+                        <button class="btn btn--primary hero__btn">Shop Now</button>
+                    </div>
+                </div>
+                <div class="hero__slide" style="background-image: url('https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                    <div class="hero__content">
+                        <span class="hero__subtitle">Electronics Sale</span>
+                        <h1 class="hero__title">Premium Gadgets at Best Prices</h1>
+                        <p class="hero__text">Smartphones, laptops and accessories with nationwide delivery</p>
+                        <button class="btn btn--primary hero__btn">Explore</button>
+                    </div>
+                </div>
+                <div class="hero__slide" style="background-image: url('https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                    <div class="hero__content">
+                        <span class="hero__subtitle">Home Essentials</span>
+                        <h1 class="hero__title">Make Your Home Beautiful</h1>
+                        <p class="hero__text">Quality products for your home with easy payment options</p>
+                        <button class="btn btn--primary hero__btn">Discover</button>
+                    </div>
+                </div>
+                <div class="hero__controls">
+                    <div class="hero__control active" data-slide="0"></div>
+                    <div class="hero__control" data-slide="1"></div>
+                    <div class="hero__control" data-slide="2"></div>
+                </div>
+                <div class="hero__nav">
+                    <button class="hero__nav-btn" id="prevSlide">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="hero__nav-btn" id="nextSlide">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features__grid">
+                <div class="feature-card slide-up">
+                    <div class="feature-card__icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3 class="feature-card__title">Free Shipping</h3>
+                    <p class="feature-card__text">Free delivery on orders over Rs. 5000 across Pakistan</p>
+                </div>
+                <div class="feature-card slide-up" style="animation-delay: 0.1s;">
+                    <div class="feature-card__icon">
+                        <i class="fas fa-undo"></i>
+                    </div>
+                    <h3 class="feature-card__title">Easy Returns</h3>
+                    <p class="feature-card__text">14-day return policy for most items</p>
+                </div>
+                <div class="feature-card slide-up" style="animation-delay: 0.2s;">
+                    <div class="feature-card__icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="feature-card__title">Secure Payment</h3>
+                    <p class="feature-card__text">100% secure payment options</p>
+                </div>
+                <div class="feature-card slide-up" style="animation-delay: 0.3s;">
+                    <div class="feature-card__icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="feature-card__title">24/7 Support</h3>
+                    <p class="feature-card__text">Dedicated customer support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Shop by Categories</h2>
+                <a href="#" class="section__link">
+                    View All
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="categories__grid">
+                <a href="#" class="category-card tilt-effect">
+                    <img src="https://images.unsplash.com/photo-1556656793-08538906a9f8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Smartphones" class="category-card__image">
+                    <div class="category-card__overlay">
+                        <h3 class="category-card__title">Smartphones</h3>
+                    </div>
+                </a>
+                <a href="#" class="category-card tilt-effect">
+                    <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Laptops" class="category-card__image">
+                    <div class="category-card__overlay">
+                        <h3 class="category-card__title">Laptops</h3>
+                    </div>
+                </a>
+                <a href="#" class="category-card tilt-effect">
+                    <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Men's Fashion" class="category-card__image">
+                    <div class="category-card__overlay">
+                        <h3 class="category-card__title">Men's Fashion</h3>
+                    </div>
+                </a>
+                <a href="#" class="category-card tilt-effect">
+                    <img src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Women's Fashion" class="category-card__image">
+                    <div class="category-card__overlay">
+                        <h3 class="category-card__title">Women's Fashion</h3>
+                    </div>
+                </a>
+                <a href="#" class="category-card tilt-effect">
+                    <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Home Appliances" class="category-card__image">
+                    <div class="category-card__overlay">
+                        <h3 class="category-card__title">Home Appliances</h3>
+                    </div>
+                </a>
+                <a href="#" class="category-card tilt-effect">
+                    <img src="https://images.unsplash.com/photo-1595341595379-cf1cd0fb7fb3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Beauty Products" class="category-card__image">
+                    <div class="category-card__overlay">
+                        <h3 class="category-card__title">Beauty Products</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="products" id="featured">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Featured Products</h2>
+                <a href="#" class="section__link">
+                    View All
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="products__filter">
+                <button class="products__filter-btn active" data-category="all">All</button>
+                <button class="products__filter-btn" data-category="electronics">Electronics</button>
+                <button class="products__filter-btn" data-category="fashion">Fashion</button>
+                <button class="products__filter-btn" data-category="home">Home & Living</button>
+                <button class="products__filter-btn" data-category="beauty">Beauty</button>
+            </div>
+            <div class="products__grid" id="featuredProducts">
+                <!-- Products will be loaded here via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Deals Section -->
+    <section class="deals" id="deals">
+        <div class="container">
+            <div class="deals__header">
+                <h2 class="deals__title">Deals of the Day</h2>
+                <p class="deals__subtitle">Don't miss out on these limited time offers. Shop now before they're gone!</p>
+            </div>
+            <div class="deals__timer">
+                <div class="deals__timer-item">
+                    <div class="deals__timer-value" id="dealHours">12</div>
+                    <div class="deals__timer-label">Hours</div>
+                </div>
+                <div class="deals__timer-item">
+                    <div class="deals__timer-value" id="dealMinutes">45</div>
+                    <div class="deals__timer-label">Minutes</div>
+                </div>
+                <div class="deals__timer-item">
+                    <div class="deals__timer-value" id="dealSeconds">30</div>
+                    <div class="deals__timer-label">Seconds</div>
+                </div>
+            </div>
+            <div class="deals__products" id="dealProducts">
+                <!-- Deal products will be loaded here via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section class="brands">
+        <div class="container">
+            <div class="brands__header">
+                <h2 class="brands__title">Our Trusted Brands</h2>
+                <p class="brands__subtitle">We partner with the best brands to bring you quality products</p>
+            </div>
+            <div class="brands__grid">
+                <div class="brand-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Samsung_Logo.svg/2560px-Samsung_Logo.svg.png" alt="Samsung">
+                </div>
+                <div class="brand-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/1667px-Apple_logo_black.svg.png" alt="Apple">
+                </div>
+                <div class="brand-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Huawei_Standard_logo.svg/2560px-Huawei_Standard_logo.svg.png" alt="Huawei">
+                </div>
+                <div class="brand-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Nokia_wordmark.svg/2560px-Nokia_wordmark.svg.png" alt="Nokia">
+                </div>
+                <div class="brand-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Dell_logo_2016.svg/2560px-Dell_logo_2016.svg.png" alt="Dell">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="testimonials__header">
+                <h2 class="testimonials__title">What Our Customers Say</h2>
+                <p class="testimonials__subtitle">Trusted by thousands of customers across Pakistan</p>
+            </div>
+            <div class="testimonials__grid">
+                <div class="testimonial-card slide-up">
+                    <div class="testimonial-card__header">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Ahmed Khan" class="testimonial-card__avatar">
+                        <div class="testimonial-card__user">
+                            <h4 class="testimonial-card__name">Ahmed Khan</h4>
+                            <div class="testimonial-card__location">Lahore</div>
+                        </div>
+                        <div class="testimonial-card__rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="testimonial-card__body">
+                        "I ordered a smartphone from Ali Raza Store and it arrived the very next day! The packaging was excellent and the product was genuine. Will definitely shop again."
+                    </p>
+                </div>
+                <div class="testimonial-card slide-up" style="animation-delay: 0.2s;">
+                    <div class="testimonial-card__header">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Fatima Ali" class="testimonial-card__avatar">
+                        <div class="testimonial-card__user">
+                            <h4 class="testimonial-card__name">Fatima Ali</h4>
+                            <div class="testimonial-card__location">Karachi</div>
+                        </div>
+                        <div class="testimonial-card__rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="testimonial-card__body">
+                        "The dress I ordered fits perfectly and the quality is even better than I expected. Customer service was very helpful when I had questions about sizing."
+                    </p>
+                </div>
+                <div class="testimonial-card slide-up" style="animation-delay: 0.4s;">
+                    <div class="testimonial-card__header">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Usman Malik" class="testimonial-card__avatar">
+                        <div class="testimonial-card__user">
+                            <h4 class="testimonial-card__name">Usman Malik</h4>
+                            <div class="testimonial-card__location">Islamabad</div>
+                        </div>
+                        <div class="testimonial-card__rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="testimonial-card__body">
+                        "Best prices I've found online in Pakistan. The JazzCash payment option made checkout so easy. My laptop was delivered safely with all accessories included."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container newsletter__container">
+            <h2 class="newsletter__title">Subscribe to Our Newsletter</h2>
+            <p class="newsletter__text">Get the latest updates on new products, special offers, and exclusive deals delivered straight to your inbox.</p>
+            <form class="newsletter__form" id="newsletterForm">
+                <input type="email" class="newsletter__input" placeholder="Enter your email address" required>
+                <button type="submit" class="btn btn--secondary newsletter__btn">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__col">
+                    <a href="#" class="footer__logo">
+                        <i class="fas fa-store footer__logo-icon"></i>
+                        Ali Raza Store
+                    </a>
+                    <p class="footer__text">
+                        Your trusted online shopping destination in Pakistan. We offer quality products at competitive prices with nationwide delivery.
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="footer__social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="footer__social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="footer__social-link">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                    <div class="payment-methods mt-4">
+                        <div class="payment-method">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/JazzCash_Logo.svg/1200px-JazzCash_Logo.svg.png" alt="JazzCash">
+                        </div>
+                        <div class="payment-method">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Easypaisa_logo.svg/1200px-Easypaisa_logo.svg.png" alt="EasyPaisa">
+                        </div>
+                        <div class="payment-method">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/2560px-Visa_Inc._logo.svg.png" alt="Visa">
+                        </div>
+                        <div class="payment-method">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/1280px-Mastercard-logo.svg.png" alt="Mastercard">
+                        </div>
+                        <div class="payment-method">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/PayPal_logo.svg/2560px-PayPal_logo.svg.png" alt="PayPal">
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <h3 class="footer__title">Quick Links</h3>
+                    <div class="footer__links">
+                        <a href="#" class="footer__link">Home</a>
+                        <a href="#featured" class="footer__link">Featured Products</a>
+                        <a href="#deals" class="footer__link">Deals of the Day</a>
+                        <a href="#categories" class="footer__link">Categories</a>
+                        <a href="#" class="footer__link">New Arrivals</a>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <h3 class="footer__title">Customer Service</h3>
+                    <div class="footer__links">
+                        <a href="#" class="footer__link">Contact Us</a>
+                        <a href="#" class="footer__link">FAQs</a>
+                        <a href="#" class="footer__link">Shipping Policy</a>
+                        <a href="#" class="footer__link">Return Policy</a>
+                        <a href="#" class="footer__link">Privacy Policy</a>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <h3 class="footer__title">Contact Info</h3>
+                    <div class="footer__contact">
+                        <div class="footer__contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Main Street, Karachi, Pakistan</span>
+                        </div>
+                        <div class="footer__contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+92 328 4034512</span>
+                        </div>
+                        <div class="footer__contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@alirazastore.com</span>
+                        </div>
+                        <div class="footer__contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Mon-Sat: 9AM - 8PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2023 Ali Raza Store. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/923284034512?text=I'm%20interested%20in%20your%20products" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Quick View Modal -->
+    <div class="modal" id="quickViewModal">
+        <div class="modal__content">
+            <button class="modal__close" id="closeQuickView">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="quick-view" id="quickViewContent">
+                <!-- Content will be loaded here via JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Modal -->
+    <div class="modal" id="cartModal">
+        <div class="modal__content cart-modal">
+            <div class="cart-modal__header">
+                <h3 class="cart-modal__title">Your Shopping Cart</h3>
+                <button class="cart-modal__close" id="closeCart">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="cart-modal__body" id="cartModalBody">
+                <!-- Cart items will be loaded here via JavaScript -->
+            </div>
+            <div class="cart-modal__footer">
+                <div class="cart-modal__summary">
+                    <span>Subtotal:</span>
+                    <span id="cartSubtotal">Rs. 0</span>
+                </div>
+                <button class="btn btn--primary cart-modal__checkout">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Account Modal -->
+    <div class="modal" id="accountModal">
+        <div class="modal__content">
+            <button class="modal__close" id="closeAccount">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="p-6">
+                <h2 class="section__title text-center mb-6">Account</h2>
+                <div class="flex flex-col gap-4">
+                    <button class="btn btn--outline" id="loginBtn">
+                        <i class="fas fa-sign-in-alt mr-2"></i> Login
+                    </button>
+                    <button class="btn btn--primary" id="registerBtn">
+                        <i class="fas fa-user-plus mr-2"></i> Register
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal__content">
+            <button class="modal__close" id="closeLogin">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="p-6">
+                <h2 class="section__title text-center mb-6">Login</h2>
+                <form id="loginForm" class="flex flex-col gap-4">
+                    <div class="quick-view__form-group">
+                        <label class="quick-view__form-label">Email</label>
+                        <input type="email" class="quick-view__form-select" required>
+                    </div>
+                    <div class="quick-view__form-group">
+                        <label class="quick-view__form-label">Password</label>
+                        <input type="password" class="quick-view__form-select" required>
+                    </div>
+                    <button type="submit" class="btn btn--primary mt-2">
+                        <i class="fas fa-sign-in-alt mr-2"></i> Login
+                    </button>
+                    <p class="text-center mt-4">
+                        Don't have an account? <a href="#" class="text-primary font-medium" id="showRegisterFromLogin">Register here</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal" id="registerModal">
+        <div class="modal__content">
+            <button class="modal__close" id="closeRegister">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="p-6">
+                <h2 class="section__title text-center mb-6">Register</h2>
+                <form id="registerForm" class="flex flex-col gap-4">
+                    <div class="quick-view__form-group">
+                        <label class="quick-view__form-label">Full Name</label>
+                        <input type="text" class="quick-view__form-select" required>
+                    </div>
+                    <div class="quick-view__form-group">
+                        <label class="quick-view__form-label">Email</label>
+                        <input type="email" class="quick-view__form-select" required>
+                    </div>
+                    <div class="quick-view__form-group">
+                        <label class="quick-view__form-label">Password</label>
+                        <input type="password" class="quick-view__form-select" required>
+                    </div>
+                    <div class="quick-view__form-group">
+                        <label class="quick-view__form-label">Confirm Password</label>
+                        <input type="password" class="quick-view__form-select" required>
+                    </div>
+                    <button type="submit" class="btn btn--primary mt-2">
+                        <i class="fas fa-user-plus mr-2"></i> Register
+                    </button>
+                    <p class="text-center mt-4">
+                        Already have an account? <a href="#" class="text-primary font-medium" id="showLoginFromRegister">Login here</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Wishlist Modal -->
+    <div class="modal" id="wishlistModal">
+        <div class="modal__content">
+            <button class="modal__close" id="closeWishlist">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="p-6">
+                <h2 class="section__title text-center mb-6">Your Wishlist</h2>
+                <div class="products__grid" id="wishlistProducts">
+                    <!-- Wishlist items will be loaded here via JavaScript -->
+                </div>
+                <div class="text-center mt-6" id="emptyWishlist">
+                    <div class="cart-modal__empty-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h4>Your wishlist is empty</h4>
+                    <p class="cart-modal__empty-text">Looks like you haven't added anything to your wishlist yet</p>
+                    <button class="btn btn--primary mt-4" id="closeWishlistBtn">Continue Shopping</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Zoom Modal -->
+    <div class="modal zoom-modal" id="zoomModal">
+        <div class="modal__content zoom-modal__content">
+            <img src="" alt="" class="zoom-modal__image" id="zoomedImage">
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastMessage">Product added to cart</span>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js">
+    </script>
+</body>
+</html>
